@@ -1,7 +1,8 @@
+
+
 body {
   padding: 0;
   margin: 0;
-  font-family: ;
   font-family: 'Poppins', system-ui, sans-serif;
   -webkit-font-smoothing: subpixel-antialiased;
   background-image: url(https://ak8.picdn.net/shutterstock/videos/31579318/thumb/1.jpg);
@@ -13,60 +14,18 @@ body {
   height: 100vh;
   flex-direction: column;
   color: white;
-}
-.nameLast {
-  fill: #FAF8FF;
-  stroke:none;
-  stroke-width: 2px;
-  font-size: 187px;
-  font-family: Gabriola;
-  stroke-dasharray: 1360;
-animation-iteration-count: 1;
-animation: csvg 3s cubic-bezier(0, 0.23, 1, .1);
+
+  /* will-change: transform;
+  animation-duration: 20s;
+  animation-name: background-image-animation;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: linear;
+  transform: translateX(0) scale(1.1); */
 }
 
-.web {
-  position: relative;
-  fill: #FAF8FF;
-  stroke:none;
-  stroke-width: 2px;
-  font-size: 187px;
-  font-family: Gabriola;
-  stroke-dasharray: 1360;
-animation-iteration-count: 1;
-animation: csvg 3s cubic-bezier(0, 0.23, 1, .1);
-top: 50px;
 
-}
-
-@keyframes csvg {
-    0% {
-        stroke: #fff;
-        stroke-width: 2px;
-        opacity: 0;
-        fill: none;
-        stroke-dasharray: 0;
-    }
-    30% {
-        stroke: #fff;
-        stroke-width: 2px;
-        opacity: 10;
-        fill: none;
-    }
-    80% {
-        stroke: #fff;
-        stroke-width: 2px;
-        fill: rgba(255, 255, 255, 0);
-    }
-    100% {
-        opacity: 10;
-        fill: #FFE7FF;
-        stroke-dasharray: 1360;
-        outline: none;
-        stroke: none;
-    }
-}
-
+/* //////////////nav bar */
 .burger {
   background-color: transparent;
   border: 0;
@@ -155,6 +114,94 @@ nav:after {
   height: 50px;
   overflow: hidden;
   max-height: 100px;
+  background-color: rgba(0,0,0, 0.6); /* Black w/opacity/see-through */
+}
+
+/* end nav bar  */
+
+.nameLast {
+  /* position: relative; */
+  fill: #FAF8FF;
+  stroke:none;
+  stroke-width: 5px;
+  font-size: 180px;
+  font-family: Gabriola;
+  stroke-dasharray: 1360;
+animation-iteration-count: 1;
+animation: csvg 3s cubic-bezier(0, 0.23, 1, .1);
+left: -90%;
+/* position: fixed; */
+}
+
+.web {
+  /* position: absolute; */
+  fill: #FAF8FF;
+  stroke:none;
+  stroke-width: 2px;
+  font-size: 110px;
+  font-family: Gabriola;
+  stroke-dasharray: 1360;
+animation-iteration-count: 1;
+animation: csvg 3s cubic-bezier(0, 0.23, 1, .1);
+top: 50px;
+
+}
+
+.about {
+  color: white;
+  top: 7%;
+  font-family: Gabriola;
+}
+
+
+
+/* .dropdown {
+  position: relative;
+  display: inline-block;
+  margin-bottom: 40px;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  padding: 12px 16px;
+  z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+ */
+
+@keyframes csvg {
+    0% {
+        stroke: #fff;
+        stroke-width: 2px;
+        opacity: 0;
+        fill: none;
+        stroke-dasharray: 0;
+    }
+    30% {
+        stroke: #fff;
+        stroke-width: 2px;
+        opacity: 10;
+        fill: none;
+    }
+    80% {
+        stroke: #fff;
+        stroke-width: 2px;
+        fill: rgba(255, 255, 255, 0);
+    }
+    100% {
+        opacity: 10;
+        fill: #FFE7FF;
+        stroke-dasharray: 1360;
+        outline: none;
+        stroke: none;
+    }
 }
 
 
@@ -167,18 +214,59 @@ nav:after {
 }
 
 .wrapper {
-  /* width: 50%; */
+  width: 100%;
   position: relative;
-  transform: translate(-50%, -50%);
-  top: 20%;
-  left: 10%;
+  /* transform: translate(-50%, -50%); */
+  top: 5%;
+  /* left:-10%; */
 }
+
+.home {
+  height: 100%;
+  bottom: 20px;
+}
+
 .webMobile {
   position: relative;
   display: none;
   color: white;
-  left: 50%;
+  align-items: center;
 }
+
+.portret {
+  max-width: 65%;
+  left: 50%;
+  transform: translateX(30%);
+  border: 3px solid #ffffff;
+
+}
+
+/* .image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  will-change: transform;
+  animation-duration: 20s;
+  animation-name: background-image-animation;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: linear;
+  transform: translateX(0) scale(1.1);
+  background: url('https://images.pexels.com/photos/16605/pexels-photo.jpg?w=1260&h=750&auto=compress&cs=tinysrgb') no-repeat center center;
+  background-size: cover;
+} */
+
+/* @keyframes background-image-animation {
+  0% {
+    transform: translateX(-5%) scale(1.1);
+  }
+  100% {
+    transform: translateX(5%) scale(1.1);
+  }
+} */
+
 @media only screen and (max-width: 600px) {
   .web {
     display: none;
@@ -190,153 +278,7 @@ nav:after {
     display: block;
   }
 }
-/* web developer */
-/* .web {
-  position: relative;
-  width: 130%;
-  height: 60px;
-  left: 5%;
-} */
 
-.tp {
-  stroke-dasharray: 0 1000;
-  fill-opacity: 0;
-  font: white;
-}
-
-
-.tp:nth-child(1) {
-  -webkit-animation: dash 6s linear 3s, opac 0.25s linear 4s;
-  -webkit-animation-fill-mode: forwards;
-  animation: dash 6s linear 3s, opac 0.25s linear 4s;
-  animation-fill-mode: forwards;
-}
-.tp:nth-child(2) {
-  -webkit-animation: dash 6s linear 3.5s, opac 0.25s linear 4.5s;
-  -webkit-animation-fill-mode: forwards;
-  animation: dash 6s linear 3.5s, opac 0.25s linear 4.5s;
-  animation-fill-mode: forwards;
-}
-.tp:nth-child(3) {
-  -webkit-animation: dash 6s linear 4s, opac 0.25s linear 5s;
-  -webkit-animation-fill-mode: forwards;
-  animation: dash 6s linear 4s, opac 0.25s linear 5s;
-  animation-fill-mode: forwards;
-}
-.tp:nth-child(4) {
-  -webkit-animation: dash 6s linear 4.5s, opac 0.25s linear 5.5s;
-  -webkit-animation-fill-mode: forwards;
-  animation: dash 6s linear 4.5s, opac 0.25s linear 5.5s;
-  animation-fill-mode: forwards;
-}
-.tp:nth-child(5) {
-  -webkit-animation: dash 6s linear 5s, opac 0.25s linear 6s;
-  -webkit-animation-fill-mode: forwards;
-  animation: dash 6s linear 5s, opac 0.25s linear 6s;
-  animation-fill-mode: forwards;
-}
-.tp:nth-child(6) {
-  -webkit-animation: dash 6s linear 5.5s, opac 0.25s linear 6.5s;
-  -webkit-animation-fill-mode: forwards;
-  animation: dash 6s linear 5.5s, opac 0.25s linear 6.5s;
-  animation-fill-mode: forwards;
-}
-
-.tp:nth-child(7) {
-  -webkit-animation: dash 6s linear 6s, opac 0.25s linear 7s;
-  -webkit-animation-fill-mode: forwards;
-  animation: dash 6s linear 6s, opac 0.25s linear 7s;
-  animation-fill-mode: forwards;
-}
-.tp:nth-child(8) {
-  -webkit-animation: dash 6s linear 6.5s, opac 0.25s linear 7.5s;
-  -webkit-animation-fill-mode: forwards;
-  animation: dash 6s linear 6.5s, opac 0.25s linear 7.5s;
-  animation-fill-mode: forwards;
-}
-
-.tp:nth-child(9) {
-  -webkit-animation: dash 6s linear 6s, opac 0.25s linear 8s;
-  -webkit-animation-fill-mode: forwards;
-  animation: dash 6s linear 7s, opac 0.25s linear 8s;
-  animation-fill-mode: forwards;
-}
-.tp:nth-child(10) {
-  -webkit-animation: dash 6s linear 6.5s, opac 0.25s linear 8.5s;
-  -webkit-animation-fill-mode: forwards;
-  animation: dash 6s linear 7.5s, opac 0.25s linear 8.5s;
-  animation-fill-mode: forwards;
-}
-.tp:nth-child(11) {
-  -webkit-animation: dash 6s linear 7s, opac 0.25s linear 9s;
-  -webkit-animation-fill-mode: forwards;
-  animation: dash 6s linear 8s, opac 0.25s linear 9s;
-  animation-fill-mode: forwards;
-}
-.tp:nth-child(12) {
-  -webkit-animation: dash 6s linear 7.5s, opac 0.25s linear 9.5s;
-  -webkit-animation-fill-mode: forwards;
-  animation: dash 6s linear 8.5s, opac 0.25s linear 9.5s;
-  animation-fill-mode: forwards;
-}
-.tp:nth-child(13) {
-  -webkit-animation: dash 6s linear 8s, opac 0.25s linear 10s;
-  -webkit-animation-fill-mode: forwards;
-  animation: dash 6s linear 9s, opac 0.25s linear 10s;
-  animation-fill-mode: forwards;
-}
-.tp:nth-child(14) {
-  -webkit-animation: dash 6s linear 8.5s, opac 0.25s linear 10.5s;
-  -webkit-animation-fill-mode: forwards;
-  animation: dash 6s linear 9.5s, opac 0.25s linear 10.5s;
-  animation-fill-mode: forwards;
-}
-
-.tp:nth-child(15) {
-  -webkit-animation: dash 6s linear 9s, opac 0.25s linear 11s;
-  -webkit-animation-fill-mode: forwards;
-  animation: dash 6s linear 10s, opac 0.25s linear 11s;
-  animation-fill-mode: forwards;
-}
-.tp:nth-child(16) {
-  -webkit-animation: dash 6s linear 9.5s, opac 0.25s linear 11.5s;
-  -webkit-animation-fill-mode: forwards;
-  animation: dash 6s linear 10.5s, opac 0.25s linear 11.5s;
-  animation-fill-mode: forwards;
-}
-
-.tp:nth-child(17) {
-  -webkit-animation: dash 6s linear 10s, opac 0.25s linear 12s;
-  -webkit-animation-fill-mode: forwards;
-  animation: dash 6s linear 11s, opac 0.25s linear 12s;
-  animation-fill-mode: forwards;
-}
-.tp:nth-child(18) {
-  -webkit-animation: dash 6s linear 10.5s, opac 0.25s linear 12.5s;
-  -webkit-animation-fill-mode: forwards;
-  animation: dash 6s linear 11.5s, opac 0.25s linear 12.5s;
-  animation-fill-mode: forwards;
-}
-
-.tp:nth-child(19) {
-  -webkit-animation: dash 6s linear 11s, opac 0.25s linear 13s;
-  -webkit-animation-fill-mode: forwards;
-  animation: dash 6s linear 12s, opac 0.25s linear 13s;
-  animation-fill-mode: forwards;
-}
-
-.tp:nth-child(20) {
-  -webkit-animation: dash 6s linear 11.5s, opac 0.25s linear 13.5s;
-  -webkit-animation-fill-mode: forwards;
-  animation: dash 6s linear 12.5s, opac 0.25s linear 13.5s;
-  animation-fill-mode: forwards;
-}
-.tp:nth-child(21) {
-  -webkit-animation: dash 6s linear 12s, opac 0.25s linear 14s;
-  -webkit-animation-fill-mode: forwards;
-  animation: dash 6s linear 13s, opac 0.25s linear 14s;
-  animation-fill-mode: forwards;
-}
 
 
 @-webkit-keyframes dash {
