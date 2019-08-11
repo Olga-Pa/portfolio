@@ -152,7 +152,10 @@ top: 50px;
 }
 
 .about_me {
-  margin: 260px 10%;
+  padding: 30px;
+  /* margin-top: 60px; */
+  margin-left: 10%;
+  right: 10%;
   color: white;
   font-family: Gabriola;
 
@@ -199,7 +202,7 @@ top: 50px;
 
 .home {
   width: 100vw;
-  padding: 0;
+  padding: 20px;
   margin: 0;
   height: 900px;
   background: url(http://tadalafilforsale.net/data/media/27/54779834.jpg) no-repeat center center;
