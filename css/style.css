@@ -387,6 +387,8 @@ top: 50px;
 }
 
 .skills_title {
+  text-align: center;
+
   margin: 20px;
   /* background-color: black; */
   color: white;
@@ -401,9 +403,12 @@ top: 50px;
 .item {
     /* background-color: var(--metrics-highlights-block__item-background-color); */
     margin: 10px;
-    padding: 24px;
+    padding-left: 24px;
     width: 305px;
     text-align: center;
+    background-color: #02011c;
+    height: 250px;
+    opacity: 0.8;
 }
 
 .btn-default {
