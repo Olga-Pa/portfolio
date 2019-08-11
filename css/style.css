@@ -360,3 +360,47 @@ top: 50px;
   font-size:2em;
   font-family:'Satisfy',cursive;
 }
+
+.items {
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin: 20px;
+}
+
+.my_skills {
+  margin: 20px;
+  /* background-color: black; */
+  color: white;
+  font-size:2em;
+  font-family:'Satisfy';
+}
+
+.skills_title {
+  margin: 20px;
+  /* background-color: black; */
+  color: white;
+  font-size:5em;
+  font-family:'Satisfy',cursive;
+}
+/* .FONT--SHADOWS_INTO_LIGHT_TWO {
+    font-family: Shadows Into Light Two,sans-serif;
+    font-weight: 400!important;
+} */
+
+.item {
+    /* background-color: var(--metrics-highlights-block__item-background-color); */
+    margin: 10px;
+    padding: 24px;
+    width: 305px;
+    text-align: center;
+}
