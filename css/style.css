@@ -156,14 +156,14 @@ top: 50px;
   margin-top: 80px;
   padding-top: 30px;
   padding-right: 70px;
-    padding-left: 80px;
+  padding-left: 80px;
   /* margin-left: 20%; */
   color: white;
   font-family: Gabriola;
   width: 100%;
   background-color: #02011c;
   height: 500px;
-  opacity: 0.8;
+  /* opacity: 0.8; */
 }
 
 @keyframes csvg {
@@ -273,7 +273,7 @@ padding-top: 50px!important;
 @media only screen and (max-width: 600px) {
   .home {
     display: none;
-    height: 900px;
+    height: 1200px;
   }
   .web {
   font-size: 100px;
@@ -283,7 +283,7 @@ padding-top: 50px!important;
 }
 #about_me {
   margin-top: 40px;
-  height: 800px;
+  height: 1000px;
   padding-left: 10px;
   padding-right: 0;
 }
@@ -295,7 +295,7 @@ padding-top: 50px!important;
   margin-bottom: 15%;
 }
 .name_web {
-  top: 90px;
+  top: 140px;
   left: 40px;
 }
 
