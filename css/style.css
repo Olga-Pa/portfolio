@@ -151,15 +151,19 @@ top: 50px;
   /* margin-left: -40px; */
 }
 
-.about_me {
-  position: relative;
-  padding-top: 60px;
-  /* margin-top: 60px; */
+#about_me {
+  /* position: relative; */
+  margin-top: 80px;
+  padding-top: 30px;
+  padding-right: 70px;
+    padding-left: 80px;
   /* margin-left: 20%; */
-  padding-left: 20%;
   color: white;
   font-family: Gabriola;
-
+  width: 100%;
+  background-color: #02011c;
+  height: 500px;
+  opacity: 0.8;
 }
 
 @keyframes csvg {
@@ -245,6 +249,26 @@ top: 50px;
     margin-top: 3.5%;
   }
 
+  #projects {
+    width: 100vw;
+    padding-top: 60px;
+    margin: 0;
+    height: 2500px;
+    background: url(http://tadalafilforsale.net/data/media/27/54779834.jpg) no-repeat center center;
+    -webkit-background-size: cover;
+       -moz-background-size: cover;
+         -o-background-size: cover;
+            background-size: cover;
+            margin: 0;
+            padding-left: 40px;
+            padding-right: 40px;
+  }
+
+.mt-3 {
+  /* margin-top: 50px!important; */
+padding-top: 50px!important;
+
+}
 
 @media only screen and (max-width: 600px) {
   .home {
@@ -257,8 +281,11 @@ top: 50px;
 .nameLast {
   font-size: 150px;
 }
-.about_me {
+#about_me {
   margin-top: 40px;
+  height: 800px;
+  padding-left: 10px;
+  padding-right: 0;
 }
 .wrapper {
   margin-left: 0;
